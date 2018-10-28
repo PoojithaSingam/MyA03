@@ -1,0 +1,14 @@
+<% include header %>
+<form name="theForm">
+    Enter a text string:
+    <br><textarea id="word" name=inStr rows=5 cols=90>
+    </textarea><br>
+    <input type=button value="Count Words" onClick="countWords()";>
+    <input type=button name="theButton" value="Clear Results" onClick='document.theForm.results.value=""';>
+        <br>
+    <br>Results<br>
+    <textarea name=results rows=5 cols=90>
+    </textarea>
+</form>  
+    <script src="js/calc.js" ></script>
+    <% include footer %>
