@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 const fs = require('fs')
 
 const app = express()  // make express app
-const port = process.env.PORT||8081
+const port = process.env.PORT || 8081
 
 // ADD THESE COMMENTS AND IMPLEMENTATION HERE
 // 1 set up the view engine
@@ -72,7 +72,7 @@ app.post("/contact", function (req, res) {
     res.render("404")
    })
    // Listen for an application request on designated port
-   app.listen(8081, function () {
-    console.log('app listening on http://127.0.0.1:8081/')
+   app.listen(port, function () {
+    console.log('app listening on '+port)
   })
 
