@@ -9,7 +9,8 @@ function countWords(input){
        str = input
    }
    else{
-      str = document.getElementById("word").value;
+         str= $("word").val();
+     // str = document.getElementById("word").value;
    }
     
    words = str.split(" "); 
